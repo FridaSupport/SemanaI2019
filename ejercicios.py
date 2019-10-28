@@ -20,7 +20,7 @@ if st.checkbox('Show Uber Data'):
 """# Numpy exercises  """
 
 "- **Show numpy version**"
-version = np.__version__
+version = None
 result = "Numpy version : {}".format(version)
 
 # answer
@@ -31,7 +31,7 @@ result
 "   *[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]*"
 
 # answer
-result = np.arange(10)
+result = None
 "Answer"
 result
 
@@ -43,7 +43,7 @@ arr = np.array(([21, 22, 23], [11, 22, 33], [43, 77, 89]))
 arr
 
 # answer
-result = arr[1,1]
+result = None
 result 
 
 "- **Select the column with index 0**"
@@ -51,7 +51,7 @@ arr = np.array(([21, 22, 23], [11, 22, 33], [43, 77, 89]))
 arr
 
 # answer
-result = arr[:, 0]
+result = None
 result
 
 
@@ -61,7 +61,7 @@ result
 arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 # answer
-result = arr[arr % 2  == 1]
+result = None
 result
 
 
@@ -71,8 +71,8 @@ result
 arr = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 # answer
-arr[arr % 2 == 1] = -1
-result = arr
+
+result = None
 
 result
 
@@ -82,7 +82,7 @@ result
 arr = np.arange(10)
 
 # answer
-result = np.reshape(arr , (2 ,-1))
+result = None
 result
 
 "- **Compute euclidian distance between A and B **"
@@ -96,7 +96,7 @@ b
 
 # Answers
 
-result = np.linalg.norm(a-b)
+result = None
 result
 
 "- **Find the most frequent value of petal length (3rd column) in the [iris dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)**"
@@ -111,11 +111,7 @@ iris = downloadIrisDataset()
 names = ('sepallength', 'sepalwidth', 'petallength', 'petalwidth', 'species')
 
 # answer
-vals, counts = np.unique(iris[:, 2], return_counts=True)
 
-result = vals[np.argmax(counts)]
+
+result = None
 result
-
-# Pandas
-
-"# Pandas exercises"
